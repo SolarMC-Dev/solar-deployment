@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>gg.solarmc</groupId>
+        <artifactId>solar-parent</artifactId>
+        <version>0.5.4</version>
+    </parent>
+
+    <artifactId>solar-deployment</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <solarpaper.version>1.1.5</solarpaper.version>
+        <solarvelocity.version>1.1.5</solarvelocity.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-modules</id>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <includeScope>runtime</includeScope>
+                            <outputDirectory>${project.build.directory}/modules</outputDirectory>
+
+                            <!-- Be very careful when changing the name of copied artifacts
+                                 The disruptor is the last remaining filename-based module -->
+                            <stripVersion>true</stripVersion>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>kitpvp</module>
+        <module>test-backend</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>gg.solarmc</groupId>
+                <artifactId>solarpaper-server</artifactId>
+                <version>${solarpaper.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.spigotmc</groupId>
+                        <artifactId>minecraft-server</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>gg.solarmc</groupId>
+                <artifactId>velocity-proxy</artifactId>
+                <version>${solarvelocity.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>gg.solarmc.loader</groupId>
+                <artifactId>loader-core-implementation</artifactId>
+                <version>0.4.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>solar-releases</id>
+            <url>https://mvn-repo.platinum-mc.com/releases</url>
+        </repository>
+    </repositories>
+</project>
