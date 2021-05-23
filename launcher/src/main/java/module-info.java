@@ -1,0 +1,2 @@
+module gg.solarmc.launcher {
+}

@@ -7,50 +7,40 @@
     <parent>
         <groupId>gg.solarmc</groupId>
         <artifactId>solar-parent</artifactId>
-        <version>0.5.4</version>
+        <version>0.5.7</version>
     </parent>
 
+    <groupId>gg.solarmc.deployment</groupId>
     <artifactId>solar-deployment</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
+        <junit.version>5.7.1</junit.version>
         <solarpaper.version>1.1.5</solarpaper.version>
         <solarvelocity.version>1.1.5</solarvelocity.version>
     </properties>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-modules</id>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <includeScope>runtime</includeScope>
-                            <outputDirectory>${project.build.directory}/modules</outputDirectory>
-
-                            <!-- Be very careful when changing the name of copied artifacts
-                                 The disruptor is the last remaining filename-based module -->
-                            <stripVersion>true</stripVersion>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
     <modules>
-        <module>kitpvp</module>
-        <module>test-backend</module>
+        <module>launcher</module>
+        <module>jarinjar-descriptor</module>
+        <module>deployments</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
             <dependency>
                 <groupId>gg.solarmc</groupId>
                 <artifactId>solarpaper-server</artifactId>
