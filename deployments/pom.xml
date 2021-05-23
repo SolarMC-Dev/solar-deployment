@@ -12,10 +12,6 @@
     <artifactId>deployments</artifactId>
     <packaging>pom</packaging>
 
-    <properties>
-        <solar-deployment.main-class/>
-    </properties>
-
     <build>
         <pluginManagement>
             <plugins>

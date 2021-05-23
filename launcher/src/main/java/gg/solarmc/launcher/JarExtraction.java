@@ -31,6 +31,11 @@ public final class JarExtraction {
      * @return all the jars which were copied
      */
     public Set<Path> copyJarsToDir(Path targetDirectory) {
+        try {
+            Files.createDirectories(targetDirectory);
+        } catch (IOException ex) {
+            throw new UncheckedIOException(ex);
+        }
         Set<Path> outputPaths = new HashSet<>();
 
         try (JarFile jar = new JarFile(sourceJar.toFile())) {

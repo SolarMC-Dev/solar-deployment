@@ -27,6 +27,6 @@ public final class SolarMain {
                 modules.add(line);
             }
         }
-        SolarLauncher.create(modules.get(0), modules, args);
+        SolarLauncher.create(modules.get(0), modules, args).launch();
     }
 }
