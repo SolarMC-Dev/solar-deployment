@@ -1,2 +1,4 @@
 org.bukkit.craftbukkit
+jdk.unsupported
+java.sql.rowset
 com.sun.jna
