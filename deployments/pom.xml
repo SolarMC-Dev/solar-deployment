@@ -4,7 +4,7 @@
     <parent>
         <groupId>gg.solarmc.deployment</groupId>
         <artifactId>solar-deployment</artifactId>
-        <version>0.1.0</version>
+        <version>0.1.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>deployments</artifactId>

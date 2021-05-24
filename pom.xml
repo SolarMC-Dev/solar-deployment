@@ -10,7 +10,7 @@
 
     <groupId>gg.solarmc.deployment</groupId>
     <artifactId>solar-deployment</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -21,7 +21,7 @@
     
     <scm>
         <developerConnection>scm:git:https://github.com/SolarMC-Dev/solar-deployment.git</developerConnection>
-      <tag>0.1.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <modules>
