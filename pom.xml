@@ -15,8 +15,9 @@
 
     <properties>
         <junit.version>5.7.1</junit.version>
-        <solarpaper.version>1.1.6</solarpaper.version>
+        <solarpaper.version>1.1.7-SNAPSHOT</solarpaper.version>
         <solarvelocity.version>1.1.5</solarvelocity.version>
+        <dataloader.version>0.5.0</dataloader.version>
     </properties>
     
     <scm>
@@ -63,7 +64,7 @@
             <dependency>
                 <groupId>gg.solarmc.loader</groupId>
                 <artifactId>loader-core-implementation</artifactId>
-                <version>0.4.1</version>
+                <version>${dataloader.version}</version>
             </dependency>
             <dependency>
                 <groupId>space.arim.dazzleconf</groupId>

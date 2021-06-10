@@ -9,10 +9,6 @@
 
     <artifactId>deploy-kitpvp</artifactId>
 
-    <properties>
-        <solar-deployment.main-class>gg.solarmc.launcher.kitpvp.KitPvP</solar-deployment.main-class>
-    </properties>
-
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
@@ -27,6 +23,11 @@
         <dependency>
             <groupId>gg.solarmc</groupId>
             <artifactId>solarpaper-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>gg.solarmc.loader</groupId>
+            <artifactId>loader-mod-credits</artifactId>
+            <version>${dataloader.version}</version>
         </dependency>
     </dependencies>
 </project>
