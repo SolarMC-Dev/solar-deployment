@@ -5,7 +5,7 @@
     <parent>
         <groupId>gg.solarmc</groupId>
         <artifactId>solar-parent</artifactId>
-        <version>0.5.7</version>
+        <version>0.6.1</version>
     </parent>
 
     <groupId>gg.solarmc.deployment</groupId>
@@ -14,10 +14,9 @@
     <packaging>pom</packaging>
 
     <properties>
+        <solar-parent.skipJavadoc>true</solar-parent.skipJavadoc>
+        <solar-parent.skipSources>true</solar-parent.skipSources>
         <junit.version>5.7.1</junit.version>
-        <solarpaper.version>1.1.7-SNAPSHOT</solarpaper.version>
-        <solarvelocity.version>1.1.5</solarvelocity.version>
-        <dataloader.version>0.5.0</dataloader.version>
     </properties>
     
     <scm>
@@ -48,7 +47,7 @@
             <dependency>
                 <groupId>gg.solarmc</groupId>
                 <artifactId>solarpaper-server</artifactId>
-                <version>${solarpaper.version}</version>
+                <version>1.1.8-SNAPSHOT</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.spigotmc</groupId>
@@ -59,17 +58,17 @@
             <dependency>
                 <groupId>gg.solarmc</groupId>
                 <artifactId>velocity-proxy</artifactId>
-                <version>${solarvelocity.version}</version>
+                <version>1.1.5</version>
             </dependency>
             <dependency>
                 <groupId>gg.solarmc.loader</groupId>
                 <artifactId>loader-core-implementation</artifactId>
-                <version>${dataloader.version}</version>
+                <version>0.5.2-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>space.arim.dazzleconf</groupId>
                 <artifactId>dazzleconf-core</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -81,3 +80,4 @@
         </repository>
     </repositories>
 </project>
+

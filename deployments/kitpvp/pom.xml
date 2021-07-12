@@ -27,7 +27,7 @@
         <dependency>
             <groupId>gg.solarmc.loader</groupId>
             <artifactId>loader-mod-credits</artifactId>
-            <version>${dataloader.version}</version>
+            <version>0.5.0</version>
         </dependency>
     </dependencies>
 </project>
