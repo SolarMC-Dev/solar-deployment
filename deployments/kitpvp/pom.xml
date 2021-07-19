@@ -21,7 +21,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>gg.solarmc</groupId>
+            <groupId>gg.solarmc.paper</groupId>
             <artifactId>solarpaper-server</artifactId>
         </dependency>
         <dependency>
