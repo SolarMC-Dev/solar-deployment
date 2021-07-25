@@ -48,7 +48,7 @@ public final class SolarMain {
              InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
              BufferedReader bufferedReader = new BufferedReader(inputStreamReader)) {
             String line;
-            while ((line = bufferedReader.readLine()) != null && !line.isBlank()) {
+            while ((line = bufferedReader.readLine()) != null && !line.isBlank() && !line.startsWith("#")) {
                 modules.add(line);
             }
         } catch (IOException ex) {
