@@ -1,8 +1,7 @@
 org.bukkit.craftbukkit
 gg.solarmc.loader.credits
 jdk.unsupported
-#java.sql.rowset
-#java.scripting
-#java.instrument
-java.se
+java.sql.rowset
+java.scripting
+java.instrument
 com.sun.jna
