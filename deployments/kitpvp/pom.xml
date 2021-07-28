@@ -22,6 +22,10 @@
     <dependencies>
         <dependency>
             <groupId>gg.solarmc.paper</groupId>
+            <artifactId>solarpaper-itemserializer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>gg.solarmc.paper</groupId>
             <artifactId>solarpaper-server</artifactId>
         </dependency>
         <dependency>
