@@ -82,6 +82,11 @@
                 <version>1.2.1</version>
             </dependency>
             <dependency>
+                <groupId>space.arim.dazzleconf</groupId>
+                <artifactId>dazzleconf-ext-snakeyaml</artifactId>
+                <version>1.2.1</version>
+            </dependency>
+            <dependency>
                 <groupId>net.kyori.adventure</groupId>
                 <artifactId>adventure-api</artifactId>
                 <version>4.8.1</version>
