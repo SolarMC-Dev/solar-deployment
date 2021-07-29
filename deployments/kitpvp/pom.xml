@@ -44,6 +44,16 @@
             <version>0.5.2-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>gg.solarmc.loader</groupId>
+            <artifactId>loader-mod-clans</artifactId>
+            <version>0.5.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>gg.solarmc</groupId>
+            <artifactId>commanditerator</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>2.6</version>
