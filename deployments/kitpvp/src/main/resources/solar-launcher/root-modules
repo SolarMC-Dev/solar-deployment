@@ -5,3 +5,4 @@ java.sql.rowset
 java.scripting
 java.instrument
 com.sun.jna
+gg.solarmc.command
