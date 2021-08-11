@@ -36,17 +36,17 @@
         <dependency>
             <groupId>gg.solarmc.loader</groupId>
             <artifactId>loader-mod-credits</artifactId>
-            <version>0.5.2-SNAPSHOT</version>
+            <version>${dataloader.version}</version>
         </dependency>
         <dependency>
             <groupId>gg.solarmc.loader</groupId>
             <artifactId>loader-mod-kitpvp</artifactId>
-            <version>0.5.2-SNAPSHOT</version>
+            <version>${dataloader.version}</version>
         </dependency>
         <dependency>
             <groupId>gg.solarmc.loader</groupId>
             <artifactId>loader-mod-clans</artifactId>
-            <version>0.5.2-SNAPSHOT</version>
+            <version>${dataloader.version}</version>
         </dependency>
         <dependency>
             <groupId>gg.solarmc</groupId>
