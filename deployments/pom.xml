@@ -36,6 +36,7 @@
 
     <modules>
         <module>kitpvp</module>
+        <module>proxy</module>
     </modules>
 
     <dependencies>
