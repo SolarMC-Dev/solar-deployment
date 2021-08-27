@@ -1,9 +1,5 @@
-org.bukkit.craftbukkit
-gg.solarmc.loader.credits
+gg.solarmc.velocity.proxywrapper
 jdk.unsupported
 java.sql.rowset
-java.scripting
-java.instrument
-java.xml
+java.xml.bind
 com.sun.jna
-gg.solarmc.command
