@@ -2,4 +2,3 @@ gg.solarmc.velocity.proxywrapper
 jdk.unsupported
 java.sql.rowset
 java.xml.bind
-com.sun.jna

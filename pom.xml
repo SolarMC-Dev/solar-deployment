@@ -69,8 +69,14 @@
             </dependency>
             <dependency>
                 <groupId>gg.solarmc.velocity</groupId>
-                <artifactId>velocity-proxy</artifactId>
+                <artifactId>proxy-wrapper</artifactId>
                 <version>3.0.1-SNAPSHOT</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.activation</groupId>
+                        <artifactId>javax.activation</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>gg.solarmc.loader</groupId>
