@@ -1,4 +1,4 @@
-gg.solarmc.velocity.proxywrapper
+com.velocitypowered.proxy
 jdk.unsupported
 java.sql.rowset
 java.xml.bind

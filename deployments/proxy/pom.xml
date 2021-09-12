@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>gg.solarmc.velocity</groupId>
-            <artifactId>proxy-wrapper</artifactId>
+            <artifactId>velocity-proxy</artifactId>
         </dependency>
     </dependencies>
 </project>
