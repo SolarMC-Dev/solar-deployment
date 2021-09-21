@@ -19,7 +19,7 @@
             <unpack>true</unpack>
             <useStrictFiltering>true</useStrictFiltering>
             <includes>
-                <include>gg.solarmc.deployment:launcher</include>
+                <include>gg.solarmc.deployment:*</include>
             </includes>
         </dependencySet>
         <dependencySet>
@@ -27,7 +27,7 @@
             <unpack>false</unpack>
             <useStrictFiltering>true</useStrictFiltering>
             <excludes>
-                <exclude>gg.solarmc.deployment:launcher</exclude>
+                <exclude>gg.solarmc.deployment:*</exclude>
             </excludes>
         </dependencySet>
     </dependencySets>
