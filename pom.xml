@@ -5,19 +5,20 @@
     <parent>
         <groupId>gg.solarmc</groupId>
         <artifactId>solar-parent</artifactId>
-        <version>0.6.1</version>
+        <version>1.1.0</version>
     </parent>
 
     <groupId>gg.solarmc.deployment</groupId>
     <artifactId>solar-deployment</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <solar-parent.skipJavadoc>true</solar-parent.skipJavadoc>
         <solar-parent.skipSources>true</solar-parent.skipSources>
-        <solarpaper.version>1.2.1-SNAPSHOT</solarpaper.version>
-        <dataloader.version>0.6.0-SNAPSHOT</dataloader.version>
+        <solarpaper.version>1.2.2-SNAPSHOT</solarpaper.version>
+        <solarvelocity.version>3.0.2</solarvelocity.version>
+        <dataloader.version>0.6.0</dataloader.version>
         <junit.version>5.7.1</junit.version>
     </properties>
     
@@ -70,7 +71,7 @@
             <dependency>
                 <groupId>gg.solarmc.velocity</groupId>
                 <artifactId>velocity-proxy</artifactId>
-                <version>3.0.2-SNAPSHOT</version>
+                <version>${solarvelocity.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>javax.activation</groupId>
@@ -108,17 +109,8 @@
 
     <repositories>
         <repository>
-            <id>solar-releases</id>
-            <url>https://mvn-repo.solarmc.gg/releases</url>
-        </repository>
-<!-- Gradle repositories are not transitive -->
-        <repository>
-            <id>arim-mvn-lgpl3</id>
-            <url>https://mvn-repo.arim.space/lesser-gpl3</url>
-        </repository>
-        <repository>
-            <id>arim-mvn-gpl3</id>
-            <url>https://mvn-repo.arim.space/gpl3</url>
+            <id>solar-repo</id>
+            <url>https://repo.solarmc.gg/mvn</url>
         </repository>
     </repositories>
 </project>
